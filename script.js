@@ -58,7 +58,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
   const email = document.querySelector('input[type="email"]').value;
   const message = document.querySelector("textarea").value;
 
-  const response = await fetch("http://localhost:5000/send", {
+  const response = await fetch("https://portfolio-assignment2-qu0y.onrender.com", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, email, message })
