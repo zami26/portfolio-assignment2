@@ -1,3 +1,13 @@
+// NAVBAR SCROLL EFFECT - Added shadow when scrolling
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
 // Mobile menu toggle (also updates aria-expanded)
 const toggleBtn = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');

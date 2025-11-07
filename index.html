@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>A.I.Zami | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar">
+<!-- NAVBAR - ENHANCED WITH GLASS EFFECT AND HOVER ANIMATIONS -->
+  <nav class="navbar" id="navbar">
     <div class="logo">A.I.Zami</div>
     <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
     <ul id="nav-links" class="nav-links">
       <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
       <li><a href="#connect">Connect</a></li>
+      <li><a href="/">Download CV</a></li>
     </ul>
   </nav>
 
@@ -34,7 +34,7 @@
       </div>
 
       <div class="hero-image">
-        <img src="img/hero.png" alt="Profile" />
+        <img src="img/hero2.png" alt="Profile" />
       </div>
     </div>
   </section>
@@ -44,14 +44,12 @@
     <div class="about-container">
       <img src="img/add.jpg" alt="Profile Picture">
       <p>
-        Hi, I’m <strong>A.I.Zami</strong>, a passionate Full Stack Web Developer. 
+        Hi, I'm <strong>A.I.Zami</strong>, a passionate Full Stack Web Developer. 
         I love creating beautiful and functional websites using modern technologies. 
         My goal is to always learn, improve, and build impactful projects.
       </p>
     </div>
   </section>
-
-
 
   <!-- SKILLS (box with progress bars) -->
   <section id="skills">
@@ -73,6 +71,12 @@
         <div class="progress"><div class="progress-bar" data-value="75%"></div></div>
       </div>
 
+      <!-- ADDED REACT.JS SKILL -->
+      <div class="skill">
+        <p>React.js <span class="skill-percent">70%</span></p>
+        <div class="progress"><div class="progress-bar" data-value="70%"></div></div>
+      </div>
+
       <div class="skill">
         <p>Node.js <span class="skill-percent">70%</span></p>
         <div class="progress"><div class="progress-bar" data-value="70%"></div></div>
@@ -91,17 +95,17 @@
     <div class="projects-container">
       <div class="project-card">
         <img src="https://via.placeholder.com/250x150" alt="Portfolio Project">
-        <h3>Portfolio Website</h3>
+        <h3>Lost and Found Portal</h3>
         <p>A personal responsive portfolio with smooth navigation and dark theme.</p>
       </div>
       <div class="project-card">
         <img src="https://via.placeholder.com/250x150" alt="E-Commerce Project">
-        <h3>E-Commerce App</h3>
+        <h3>Hero Travels</h3>
         <p>Full stack online store with cart, payment, and product management system.</p>
       </div>
       <div class="project-card">
         <img src="https://via.placeholder.com/250x150" alt="Chat App">
-        <h3>Chat Application</h3>
+        <h3>Liveable place Rinterio</h3>
         <p>Real-time chat app built using Node.js and WebSocket for live messaging.</p>
       </div>
     </div>
@@ -121,20 +125,17 @@
 
     <!-- Social Links -->
     <div class="social-links">
-      <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
-      <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+      <a href="https://www.linkedin.com/in/arafatul-islam-zami-76a43637b/" target="_blank">💼 LinkedIn</a>
+      <a href="https://x.com/arafatul_zami" target="_blank">🐦 Twitter</a>
       <a href="https://github.com/zami26" target="_blank">🐙 GitHub</a>
-      <a href="mailto:arfatulislamzami@gmail.com">📧 Email</a>
+      <a href="mailto:arafatulislamzami@gmail.com">📧 Email</a>
     </div>
-  </div>
-
   </section>
 
   <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 A.I.Zami • All rights reserved</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
