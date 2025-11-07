@@ -47,3 +47,24 @@ if (skillsBox && progressBars.length) {
 
   observer.observe(skillsBox);
 }
+
+
+//connect with me section..
+
+document.querySelector("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const name = document.querySelector('input[type="text"]').value;
+  const email = document.querySelector('input[type="email"]').value;
+  const message = document.querySelector("textarea").value;
+
+  const response = await fetch("http://localhost:5000/send", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, email, message })
+  });
+
+  const result = await response.json();
+  alert(result.message);
+});
+
